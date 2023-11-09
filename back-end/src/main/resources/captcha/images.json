@@ -1,0 +1,178 @@
+[
+    {
+        "name": "Gran Canaria",
+        "path": "GranCanaria.png"
+    },
+    {
+        "name": "Fuerteventura",
+        "path": "Fuerteventura.png"
+    },
+    {
+        "name": "Lanzarote",
+        "path": "Lanzarote.png"
+    },
+    {
+        "name": "Tenerife",
+        "path": "Tenerife.png"
+    },
+    {
+        "name": "La Gomera",
+        "path": "laGomera.png"
+    },
+    {
+        "name": "El Hierro",
+        "path": "elHierro.png"
+    },
+    {
+        "name": "La Palma",
+        "path": "laPalma.png"
+    },
+    {
+        "name": "Avión",
+        "path": "airplane.png"
+    },
+    {
+        "name": "Globos",
+        "path": "balloons.png"
+    },
+    {
+        "name": "Cámara",
+        "path": "camera.png"
+    },
+    {
+        "name": "Coche",
+        "path": "car.png"
+    },
+    {
+        "name": "Gato",
+        "path": "cat.png"
+    },
+    {
+        "name": "Silla",
+        "path": "chair.png"
+    },
+    {
+        "name": "Clip",
+        "path": "clip.png"
+    },
+    {
+        "name": "Reloj",
+        "path": "clock.png"
+    },
+    {
+        "name": "Nube",
+        "path": "cloud.png"
+    },
+    {
+        "name": "Ordenador",
+        "path": "computer.png"
+    },
+    {
+        "name": "Sobre",
+        "path": "envelope.png"
+    },
+    {
+        "name": "Ojo",
+        "path": "eye.png"
+    },
+    {
+        "name": "Bandera",
+        "path": "flag.png"
+    },
+    {
+        "name": "Carpeta",
+        "path": "folder.png"
+    },
+    {
+        "name": "Pie",
+        "path": "foot.png"
+    },
+    {
+        "name": "Gráfico",
+        "path": "graph.png"
+    },
+    {
+        "name": "Casa",
+        "path": "house.png"
+    },
+    {
+        "name": "Llave",
+        "path": "key.png"
+    },
+    {
+        "name": "Hoja",
+        "path": "leaf.png"
+    },
+    {
+        "name": "Bombilla",
+        "path": "light-bulb.png"
+    },
+    {
+        "name": "Candado",
+        "path": "lock.png"
+    },
+    {
+        "name": "Lupa",
+        "path": "magnifying-glass.png"
+    },
+    {
+        "name": "Hombre",
+        "path": "man.png"
+    },
+    {
+        "name": "Nota musical",
+        "path": "music-note.png"
+    },
+    {
+        "name": "Pantalones",
+        "path": "pants.png"
+    },
+    {
+        "name": "Lápiz",
+        "path": "pencil.png"
+    },
+    {
+        "name": "Impresora",
+        "path": "printer.png"
+    },
+    {
+        "name": "Robot",
+        "path": "robot.png"
+    },
+    {
+        "name": "Tijeras",
+        "path": "scissors.png"
+    },
+    {
+        "name": "Gafas de sol",
+        "path": "sunglasses.png"
+    },
+    {
+        "name": "Etiqueta",
+        "path": "tag.png"
+    },
+    {
+        "name": "Árbol",
+        "path": "tree.png"
+    },
+    {
+        "name": "Camión",
+        "path": "truck.png"
+    },
+    {
+        "name": "Camiseta",
+        "path": "t-shirt.png"
+    },
+    {
+        "name": "Sombrilla",
+        "path": "umbrella.png"
+    },
+    {
+        "name": "Mujer",
+        "path": "woman.png"
+    },
+    {
+        "name": "Mundo",
+        "path": "world.png"
+    }
+]

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms" 
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+      x:Class="Captcha.Captcha"
+      ColumnSpacing="20"
+      Margin="20,0,20,20"
+      HeightRequest="250"
+      BackgroundColor="White"
+      IsVisible="{Binding Failed}">
+
+    <Label LineBreakMode="WordWrap"
+           BackgroundColor="#C4D0DC"
+           VerticalOptions="Center"
+           Padding="15"
+           IsVisible="{Binding isImagesVisible}">
+        <Label.FormattedText>
+            <FormattedString>
+                <Span Text="Seleccione la imagen que corresponda con:  " 
+                      TextColor="Black" 
+                      FontSize="12"/>
+                <Span Text="{Binding captchasession.ImageName}"
+                      TextColor="#8B0A08" 
+                      FontAttributes="Bold"
+                      FontSize="12"/>
+            </FormattedString>
+        </Label.FormattedText>
+    </Label>
+    
+   <Label LineBreakMode="WordWrap"
+           BackgroundColor="#C4D0DC"
+           VerticalOptions="Center"
+           Padding="15"
+           IsVisible="{Binding isAudioVisible}">
+        <Label.FormattedText>
+            <FormattedString>
+                <Span Text="Escribe lo que escuches. Números o palabras:  " 
+                      TextColor="Black" 
+                      FontSize="12"/>
+            </FormattedString>
+        </Label.FormattedText>
+    </Label>
+
+    <CollectionView Grid.Row="1"
+                    ItemsSource="{Binding Images}"
+                    Margin="0,5,0,0"
+                    x:Name="captcha"
+                    IsVisible="{Binding isImagesVisible}">
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Horizontal" />
+        </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate >
+            <DataTemplate>
+                <StackLayout  Grid.Column="{Binding index}" 
+                              HorizontalOptions="Center"
+                              Margin="10,0,10,0">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Path=BindingContext.tapImagecommand, Source={x:Reference captcha}}"
+                                              CommandParameter="{Binding .}"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="{Binding Source}"
+                           HeightRequest="50"
+                           WidthRequest="50"/>
+                </StackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+
+    <Entry Placeholder="Escribe..."
+           PlaceholderColor="Black"
+           FontAttributes="Bold"
+           FontSize="12"
+           Grid.Row="1" 
+           WidthRequest="300"
+           HorizontalOptions="CenterAndExpand"
+           TextColor="Black"
+           Text="{Binding audioTxt}"
+           IsVisible="{Binding isAudioVisible}"/>
+
+    
+    <Grid Grid.Row="2"
+          HeightRequest="50"
+          IsVisible="{Binding isImagesVisible}">
+        <ImageButton Source="retry"
+                 BackgroundColor="#F87056"
+                 Command="{Binding getAnothercommand}"
+                 WidthRequest="40"
+                 HeightRequest="40"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"
+                 CornerRadius="20"/>
+        <ImageButton Source="iconoAudio"
+                 BackgroundColor="White"
+                 Grid.Column="1"
+                 Command="{Binding playAudioAndLeavecommand}"
+                 WidthRequest="40"
+                 HeightRequest="40"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"
+                 CornerRadius="20"
+                 BorderWidth="1"
+                 BorderColor="Black"
+                 Padding="10"/>
+    </Grid>
+    
+    <Grid Grid.Row="2"
+          HeightRequest="50"
+          IsVisible="{Binding isAudioVisible}">
+        <ImageButton Source="retry"
+                 BackgroundColor="#F87056"
+                 Command="{Binding changeToImagescommand}"
+                 WidthRequest="40"
+                 HeightRequest="40"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"
+                 CornerRadius="20"/>
+        <ImageButton Source="iconoAudio"
+                 BackgroundColor="White"
+                 Grid.Column="1"
+                 Command="{Binding playAudioAndLeavecommand}"
+                 WidthRequest="40"
+                 HeightRequest="40"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"
+                 CornerRadius="20"
+                 BorderWidth="1"
+                 BorderColor="Black"
+                 Padding="10"/>
+    </Grid>
+
+</Grid>

@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "c418a875-4a0c-428f-89a5-91d89a0ca55e",
+		"name": "API Rest para el proyecto scscaptcha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19211046"
+	},
+	"item": [
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "start",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/start/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"start",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "image",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/image/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"image",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "audio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/image/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"image",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "try",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Preproducción",
+			"item": [
+				{
+					"name": "start",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://captcharest-pre.scs-salud.org/sanidad/scs/scsCaptchaRest/start/5",
+							"protocol": "https",
+							"host": [
+								"captcharest-pre",
+								"scs-salud",
+								"org"
+							],
+							"path": [
+								"sanidad",
+								"scs",
+								"scsCaptchaRest",
+								"start",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "image",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://captcharest-pre.scs-salud.org/sanidad/scs/scsCaptchaRest/image/3",
+							"protocol": "https",
+							"host": [
+								"captcharest-pre",
+								"scs-salud",
+								"org"
+							],
+							"path": [
+								"sanidad",
+								"scs",
+								"scsCaptchaRest",
+								"image",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "audio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://captcharest-pre.scs-salud.org/sanidad/scs/scsCaptchaRest/image/3",
+							"protocol": "https",
+							"host": [
+								"captcharest-pre",
+								"scs-salud",
+								"org"
+							],
+							"path": [
+								"sanidad",
+								"scs",
+								"scsCaptchaRest",
+								"image",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "try",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "request",
+								"value": " {\"name\":\"f7a80795dacce7639d5287bcf60111a2\",\"value\":\"44134ef6ede28dac258c07304558cd61\"}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://captcharest-pre.scs-salud.org/sanidad/scs/scsCaptchaRest/try",
+							"protocol": "https",
+							"host": [
+								"captcharest-pre",
+								"scs-salud",
+								"org"
+							],
+							"path": [
+								"sanidad",
+								"scs",
+								"scsCaptchaRest",
+								"try"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Producción",
+			"item": []
+		}
+	]
+}

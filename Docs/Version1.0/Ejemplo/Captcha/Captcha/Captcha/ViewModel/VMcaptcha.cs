@@ -111,7 +111,7 @@ namespace Captcha.ViewModel
         {
             try
             {
-                Uri uri = new Uri("http://192.168.1.40:8080/start/5");
+                Uri uri = new Uri("http://ip:8080/start/5");
                 HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, uri);
                 HttpResponseMessage response = await client.SendAsync(request);
                 if (response.IsSuccessStatusCode)
@@ -141,7 +141,7 @@ namespace Captcha.ViewModel
         {
             try
             {
-                Uri uri = new Uri("http://192.168.1.40:8080/image/" + index.ToString());
+                Uri uri = new Uri("http://ip:8080/image/" + index.ToString());
                 HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, uri);
                 HttpResponseMessage response = await client.SendAsync(request);
                 if (response.IsSuccessStatusCode)
@@ -161,7 +161,7 @@ namespace Captcha.ViewModel
         {
             try
             {
-                Uri uri = new Uri("http://192.168.1.40:8080/audio");
+                Uri uri = new Uri("http://ip:8080/audio");
                 HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, uri);
                 HttpResponseMessage response = await client.SendAsync(request);
                 if (response.IsSuccessStatusCode)
@@ -192,7 +192,7 @@ namespace Captcha.ViewModel
                 sendParameter = valueSentImages;
             }
             Console.WriteLine("PARAMETROS: " + sendName + " " + sendParameter);
-            var request = new HttpRequestMessage(HttpMethod.Post, "http://192.168.1.40:8080/try");
+            var request = new HttpRequestMessage(HttpMethod.Post, "http://ip:8080/try");
             var parameter = new
             {
                 name = sendName,
